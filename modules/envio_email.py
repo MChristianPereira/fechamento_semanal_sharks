@@ -35,7 +35,7 @@ class enviar_email():
             msg = EmailMessage()
             msg['Subject']  = 'ERRO NO FECHAMENTO SEMANAL'
             msg['From'] = self.remetente
-            msg['To'] = self.destinatario
+            msg['To'] = self.remetente
 
             msg.set_content(f'{error}')
 
